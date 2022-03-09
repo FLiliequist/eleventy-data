@@ -1,0 +1,13 @@
+<h2>-- Article --</a>
+<ul>
+    {% for article in articles %}
+        <li>
+            <strong>
+                <a href="{{ article.url | url }}">{{ article.data.title }}</a>
+            </strong>
+            <span>
+                {{ article.data.description }}
+            </span>
+        </li>
+    {% endfor %}
+</ul>
