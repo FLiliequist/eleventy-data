@@ -5,5 +5,5 @@ description: DELEGATED ACTS
 ---
 
 
-<a href=Article-50>Article-50</a>
+<a href=Article-50>Article-50 - Exercise of the delegation</a>
 
