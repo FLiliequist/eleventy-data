@@ -1,0 +1,12 @@
+---
+layout: layouts/article.njk
+pagination:
+    data: articles
+    size: 1
+    alias: article
+permalink: "article-{{ article.id | slug }}/"
+tags: article
+---
+
+<h2>{{ article.name }}</h2>
+{{ article.text | safe }}

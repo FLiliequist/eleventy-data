@@ -1,7 +1,17 @@
 ---
 layout: layouts/base.njk
 permalink: /
+data: chapters
 ---
+<h3>-- Chapters --</h3>
 
-Halloj, Denna text kommer ifrån Index.njk filen
-Detta är en ny rad, coolt!
+<ul>
+    {%- for chapter in chapters -%}
+        <li>
+            <h4> <a href="{{ chapter.name }}"> {{ chapter.name }} - {{chapter.title}}</a> </h4>
+            {%- for article in chapter.articles -%}
+            <li> <a href="{{ article.artName }}">{{ article.artName }} - {{ article.artTitle }}</a> </li>
+            {%- endfor -%}
+        </li>
+    {%- endfor -%}
+</ul>
