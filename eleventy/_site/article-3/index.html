@@ -1,73 +1,190 @@
 <html>
   <head>
+      <link rel="stylesheet" href="/css/style.css">
       <title>Digital Operational Resilience Act</title>
   </head>
   <body>
       
-<h2>Definitions </h2>
-<p>For the purposes of this Regulation, the following definitions shall apply:</p>
-(1)‘digital operational resilience’ means the ability of a financial entity to build, assure and review its operational integrity from a technological perspective by ensuring, either directly or indirectly, through the use of services of ICT third-party providers, the full range of ICT-related capabilities needed to address the security of the network and information systems which a financial entity makes use of, and which support the continued provision of financial services and their quality;</p>
-(2)‘network and information system’ means network and information system as defined in point (1) of Article 4 of Directive (EU) No 2016/1148;</p>
-(3)‘security of network and information systems’ means security of network and information systems as defined in point (2) of Article 4 of Directive (EU) No 2016/1148; </p>
-(4)‘ICT risk’ means any reasonably identifiable circumstance in relation to the use of network and information systems, - including a malfunction, capacity overrun, failure, disruption, impairment, misuse, loss or other type of malicious or non-malicious event - which, if materialised, may compromise the security of the network and information systems, of any technology-dependant tool or process, of the operation and process’ running, or of the provision of services, thereby compromising the integrity or availability of data, software or any other component of ICT services and infrastructures, or causing a breach of confidentiality, a damage to physical ICT infrastructure or other adverse effects; </p>
-(5)‘information asset’ means a collection of information, either tangible or intangible, that is worth protecting;</p>
-(6)‘ICT-related incident’ means an unforeseen identified occurrence in the network and information systems, whether resulting from malicious activity or not, which compromises the security of network and information systems, of the information that such systems process, store or transmit, or has adverse effects on the availability, confidentiality, continuity or authenticity of financial services provided by the financial entity;</p>
-(7)‘major ICT-related incident’ means an ICT-related incident with a potentially high adverse impact on the network and information systems that support critical functions of the financial entity; </p>
-(8)‘cyber threat’ means ‘cyber threat’ as defined in point (8) of Article 2 Regulation (EU) 2019/881 of the European Parliament and of the Council</p>
-42</p>
-; </p>
-(9)‘cyber-attack’ means a malicious ICT-related incident by means of an attempt to destroy, expose, alter, disable, steal or gain unauthorized access to or make unauthorized use of an asset perpetrated by any threat actor;</p>
-(10)‘threat intelligence’ means information that has been aggregated, transformed, analysed, interpreted or enriched to provide the necessary context for decision-making and which brings relevant and sufficient understanding for mitigating the impact of an ICT-related incident or cyber threat, including the technical details of a cyber-attack, those responsible for the attack and their modus operandi and motivations;</p>
-(11)‘defence-in-depth’ means an ICT-related strategy integrating people, processes and technology to establish a variety of barriers across multiple layers and dimensions of the entity; </p>
-(12)‘vulnerability’ means a weakness, susceptibility or flaw of an asset, system, process or control that can be exploited by a threat; </p>
-(13)‘threat led penetration testing’ means a framework that mimics the tactics, techniques and procedures of real-life threat actors perceived as posing a genuine cyber threat, that delivers a controlled, bespoke, intelligence-led (red team) test of the entity’s critical live production systems;</p>
-(14)‘ICT third-party risk’ means ICT risk that may arise for a financial entity in relation to its use of ICT services provided by ICT third-party service providers or by further sub-contractors of the latter; </p>
-(15)‘ICT third-party service provider’ means an undertaking providing digital and data services, including providers of cloud computing services, software, data analytics services, data centres, but excluding providers of hardware components and undertakings authorised under Union law which provide electronic communication services as defined referred to in point (4) of Article 2 of Directive (EU) 2018/1972 of the European Parliament and of the Council</p>
-43</p>
-; </p>
-(16)‘ICT services’ means digital and data services provided through the ICT systems to one or more internal or external users, including provision of data, data entry, data storage, data processing and reporting services, data monitoring as well as data based business and decision support services;</p>
-(17)‘critical or important function’ means a function whose discontinued, defective or failed performance would materially impair the continuing compliance of a financial entity with the conditions and obligations of its authorisation, or with its other obligations under applicable financial services legislation, or its financial performance or the soundness or continuity of its services and activities; </p>
-(18)‘critical ICT third-party service provider’ means an ICT third-party service provider designated in accordance with Article 29 and subject to the Oversight Framework referred to in Articles 30 to 37; </p>
-(19)‘ICT third-party service provider established in a third country’ means an ICT third-party service provider that is a legal person established in a third-country, has not set up business/presence in the Union, and has entered into a contractual arrangement with a financial entity for the provision of ICT services;</p>
-(20)‘ICT sub-contractor established in a third country’ means an ICT sub-contractor that is a legal person established in a third-country, has not set up business/presence in the Union and has entered into a contractual arrangement either with an ICT third-party service provider, or with an ICT third-party service provider established in a third country;</p>
-(21)‘ICT concentration risk’ means an exposure to individual or multiple related critical ICT third-party service providers creating a degree of dependency on such providers so that the unavailability, failure or other type of shortfall of the latter may potentially endanger the ability of a financial entity, and ultimately of the Union’s financial system as a whole, to deliver critical functions, or to suffer other type of adverse effects, including large losses; </p>
-(22)‘management body’ means a management body as defined in point (36) of Article 4(1) of Directive 2014/65/EU, point (7) of Article 3(1) of Directive 2013/36/EU, point (s) of Article 2(1) of Directive 2009/65/EC, point (45) of Article 2(1) of Regulation (EU) No 909/2014, point (20) of Article 3(1) of Regulation (EU) 2016/1011 of the European Parliament and of the Council</p>
-44</p>
-, point (u) of Article 3(1) of Regulation (EU) 20xx/xx of the European Parliament and of the Council</p>
-45</p>
-[MICA] or the equivalent persons who effectively run the entity or have key functions in accordance with relevant Union or national legislation; </p>
-(23)‘credit institution’ means a credit institution as defined in point (1) of Article 4(1) of Regulation (EU) No 575/2013 of the European Parliament and of the Council</p>
-46</p>
-;</p>
-(24)‘investment firm’ means an investment firm as defined in point (1) of Article 4(1) of Directive 2014/65/EU;</p>
-(25)‘payment institution’ means a payment institution as defined in point (d) of Article 1(1) of Directive (EU) 2015/2366; </p>
-(26)‘electronic money institution’ means an electronic money institution as defined in point (1) of Article 2 of Directive 2009/110/EC of the European Parliament and of the Council</p>
-47</p>
-;</p>
-(27)‘central counterparty’ means a central counterparty as defined in point (1) of Article 2 of Regulation (EU) No 648/2012; </p>
-(28)‘trade repository’ means a trade repository’ as defined in point (2) of Article 2 of Regulation (EU) No 648/2012; </p>
-(29)‘central securities depository’ means a central securities as defined in point (1) of Article 2(1) of Regulation 909/2014; </p>
-(30)‘trading venue’ means a trading venue as defined in point (24) of Article 4(1) of Directive 2014/65/EU; </p>
-(31)‘manager of alternative investment funds’ means a manager of alternative investment funds as defined in point (b) of Article 4(1) of Directive 2011/61/EU;</p>
-(32)‘management company’ means a management company as defined in point (b) of Article 2(1) of Directive 2009/65/EC; </p>
-(33)‘data reporting service provider’ means a data reporting service provider as defined in point (63) of Article (4)(1) of Directive 2014/65/EU; </p>
-(34)‘insurance undertaking’ means an insurance undertaking as defined in point (1) of Article 13 of Directive 2009/138/EC; </p>
-(35)‘reinsurance undertaking’ means a reinsurance undertaking as defined in point (4) of Article 13 of Directive 2009/138/EC; </p>
-(36)‘insurance intermediary’ means insurance intermediary as defined in point (3) of Article 2 of Directive (EU) 2016/97; </p>
-(37)‘ancillary insurance intermediary’ means ancillary insurance intermediary as defined in point (4) of Article 2 of Directive (EU) 2016/97; </p>
-(38)‘reinsurance intermediary’ means reinsurance intermediary as defined in point (5) of Article 2 of Directive (EU) 2016/97;</p>
-(39)‘institution for occupational retirement pensions’ means institution for occupational retirement pensions as defined in point (6) of Article 1 of Directive 2016/2341; </p>
-(40)‘credit rating agency’ means a credit rating agency as defined in point (a) of Article 3(1) of Regulation (EC) No 1060/2009; </p>
-(41)‘statutory auditor’ means statutory auditor as defined in point (2) of Article 2 of Directive 2006/43/EC;</p>
-(42)‘audit firm’ means an audit firm as defined in point (3) of Article 2 of Directive 2006/43/EC; </p>
-(43)‘crypto-asset service provider’ means crypto-asset service provider as defined in point (n) of Article 3(1) of Regulation (EU) 202x/xx [PO: insert reference to MICA Regulation]; </p>
-(44)‘issuer of crypto-assets’ means issuer of crypto-assets as defined in point (h) of Article 3 (1) of [OJ: insert reference to MICA Regulation]; </p>
-(45)‘issuer of asset-referenced tokens’ means ‘issuer of asset-referenced payment tokens’ as defined in point (i) of Article 3 (1) of [OJ: insert reference to MICA Regulation]; </p>
-(46)‘issuer of significant asset-referenced tokens’ means issuer of significant asset-referenced payment tokens ad defined in point (j) of Article 3 (1) of [OJ: insert reference to MICA Regulation]; </p>
-(47)‘administrator of critical benchmarks’ means an administrator of critical benchmarks as defined in point (x) of Article x of Regulation xx/202x [OJ: insert reference to Benchmark Regulation]; </p>
-(48)‘crowdfunding service provider’ means a crowdfunding service provider as defined in point (x) Article x of Regulation (EU) 202x/xx [PO: insert reference to Crowdfunding Regulation];</p>
-(49)‘securitisation repository’ means securitisation repository as defined in point (23) of Article 2 of Regulation (EU) 2017/2402; </p>
-(50)‘microenterprise’ means a financial entity as defined in Article 2(3) of the Annex to Recommendation 2003/361/EC.</p>
+            <p id="_Toc31812059" class="Titrearticle">
+               <span>Article 3 </span>
+            </p>
+            <p class="Titrearticle">
+               <span>Definitions </span>
+            </p>
+            <p class="Normal">
+               <span>For the purposes of this Regulation, the following definitions shall apply:</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(1)</span></span><span>‘digital operational resilience’ means the ability of a financial entity to build, assure and review its operational integrity from a technological perspective by ensuring, either directly or indirectly, through the use of services of ICT third-party providers, the full range of ICT-related capabilities needed to address the security of the network and information systems which a financial entity makes use of, and which support the continued provision of financial services and their quality;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(2)</span></span><span>‘network and information system’ means network and information system as defined in point (1) of Article 4 of Directive (EU) No 2016/1148;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(3)</span></span><span>‘security of network and information systems’ means security of network and information systems as defined in point (2) of Article 4 of Directive (EU) No 2016/1148; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(4)</span></span><span>‘ICT risk’ means any reasonably identifiable circumstance in relation to the use of network and information systems, - including a malfunction, capacity overrun, failure, disruption, impairment, misuse, loss or other type of malicious or non-malicious event - which, if materialised, may compromise the security of the network and information systems, of any technology-dependant tool or process, of the operation and process’ running, or of the provision of services, thereby compromising the integrity or availability of data, software or any other component of ICT services and infrastructures, or causing a breach of confidentiality, a damage to physical ICT infrastructure or other adverse effects; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(5)</span></span><span>‘information asset’ means a collection of information, either tangible or intangible, that is worth protecting;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(6)</span></span><span>‘</span><span>ICT-related </span><span>incident’</span><span> means an unforeseen identified occurrence </span><span>in the network and information systems, whether resulting from malicious activity or not</span><span>, </span><span>which compromises the security of network and information systems, of the information that such systems process, store or transmit, or has adverse effects on the availability, confidentiality, continuity or authenticity of financial services provided by the financial entity;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(7)</span></span><span>‘major ICT-related incident’ means an ICT-related incident with a potentially high adverse impact on the network and information systems that support critical functions of the financial entity; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(8)</span></span><span>‘cyber threat’ means ‘cyber threat’ as defined in point (8) of Article 2 Regulation (EU) 2019/881 of the European Parliament and of the Council</span><span class="FootnoteReference">
+                  <a class="footnoteRef" id="footnoteref43" href="#footnote43">42</a>
+               </span><span>; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(9)</span></span><span>‘cyber-attack’ means a malicious ICT-related incident by means of an </span><span>attempt to destroy, expose, alter, disable, steal or gain unauthorized access to or make unauthorized use of an asset </span><span>perpetrated by any threat actor;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(10)</span></span><span>‘</span><span>threat intelligence’ means information that has been aggregated, transformed, analysed, interpreted or enriched to provide the necessary context for decision-making and which brings relevant and sufficient understanding for mitigating the impact of an ICT-related incident or cyber threat, including the technical details of a cyber-attack, those responsible for the attack and their modus operandi and motivations;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(11)</span></span><span>‘defence-in-depth’ means an ICT-related strategy integrating people, processes and technology to establish a variety of barriers across multiple layers and dimensions of the entity; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(12)</span></span><span>‘vulnerability’ means a weakness, susceptibility or flaw of an asset, system, process or control that can be exploited by a threat; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(13)</span></span><span>‘</span><span>threat led penetration testing’ means </span><span>a framework that mimics the tactics, techniques and procedures of real-life threat actors perceived as posing a genuine cyber threat, that delivers a controlled, bespoke, intelligence-led (red team) test of the entity’s critical live production systems;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(14)</span></span><span>‘ICT third-party risk’ means ICT risk that may arise for a financial entity in relation to its use of ICT services provided by ICT third-party service providers or by further sub-contractors of the latter; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(15)</span></span><span>‘ICT third-party service provider’ means a</span><span>n undertaking providing digital and data services</span><span>, including providers of cloud computing services, software, data analytics services, data centres, but excluding providers of hardware components and undertakings authorised under Union law which provide electronic communication </span><span>services as defined referred to in point (4) of Article 2 of Directive (EU) 2018/1972 of the European Parliament and of the Council</span><span class="FootnoteReference">
+                  <a class="footnoteRef" id="footnoteref44" href="#footnote44">43</a>
+               </span><span>; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(16)</span></span><span>‘ICT services’ means digital and data services provided through the ICT systems to one or more internal or external users, including provision of data, data entry, data storage, data processing and reporting services, data monitoring as well as data based business and decision support services;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(17)</span></span><span>‘critical or important function’ means a function whose discontinued, defective or failed performance would materially impair the continuing compliance of a financial entity with the conditions and obligations of its authorisation, or with its other obligations under applicable financial services legislation, or its financial performance or the soundness or continuity of its services and activities; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(18)</span></span><span>‘critical ICT third-party service provider’ means an ICT third-party service provider designated in accordance with Article 29 and subject to the Oversight Framework referred to in Articles 30 to 37; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(19)</span></span><span>‘ICT third-party service provider established in a third country’ means an ICT third-party service provider that is a legal person established in a third-country, has not set up business/presence in the Union, and has entered into a contractual arrangement with a financial entity for the provision of ICT services;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(20)</span></span><span>‘ICT sub-contractor established in a third country’ means an ICT sub-contractor that is a legal person established in a third-country, has not set up business/presence in the Union and has entered into a contractual arrangement either with an ICT third-party service provider, or with an ICT third-party service provider established in a third country;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(21)</span></span><span>‘ICT concentration risk’ means an exposure to individual or multiple related critical ICT third-party service providers creating a degree of dependency on such providers so that the unavailability, failure or other type of shortfall of the latter may potentially endanger the ability of a financial entity, and ultimately of the Union’s financial system as a whole, to deliver critical functions, or to suffer other type of adverse effects, including large losses; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(22)</span></span><span>‘management body’ means a management body as defined in point (36) of Article 4(1) of Directive 2014/65/EU, point (7) of Article 3(1) of Directive 2013/36/EU, point (s) of Article 2(1) of Directive 2009/65/EC, point (45) of Article 2(1) of Regulation (EU) No 909/2014, point (20) of Article 3(1) of Regulation (EU) 2016/1011 of the European Parliament and of the Council</span><span class="FootnoteReference">
+                  <a class="footnoteRef" id="footnoteref45" href="#footnote45">44</a>
+               </span><span>, point (u) of Article 3(1) of Regulation (EU) 20xx/xx of the European Parliament and of the Council</span><span class="FootnoteReference">
+                  <a class="footnoteRef" id="footnoteref46" href="#footnote46">45</a>
+               </span><span> [MICA] or the equivalent persons who effectively run the entity or have key functions in accordance with relevant Union or national legislation; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(23)</span></span><span>‘credit institution’ means a credit institution as defined in point (1) of Article 4(1) of Regulation (EU) No 575/2013 of the European Parliament and of the Council</span><span class="FootnoteReference">
+                  <a class="footnoteRef" id="footnoteref47" href="#footnote47">46</a>
+               </span><span>;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(24)</span></span><span>‘investment firm’ means an investment firm as defined in point (1) of Article 4(1) of Directive 2014/65/EU;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(25)</span></span><span>‘</span><span>payment institution’ means a payment institution as defined in point (d) of Article 1(1) of Directive (EU) 2015/2366; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(26)</span></span><span>‘</span><span>electronic money institution’ means an electronic money institution as defined in point (1) of Article 2 of Directive 2009/110/EC of the European Parliament and of the Council</span><span class="FootnoteReference">
+                  <a class="footnoteRef" id="footnoteref48" href="#footnote48">47</a>
+               </span><span>;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(27)</span></span><span>‘central counterparty’ means a central counterparty as defined in point (1) of Article 2 of Regulation (EU) No 648/2012; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(28)</span></span><span>‘trade repository’ means a trade repository’ as defined in point (2) of Article 2 of Regulation (EU) No 648/2012; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(29)</span></span><span>‘central securities depository’ means a central securities as defined in point (1) of Article 2(1) of Regulation 909/2014; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(30)</span></span><span>‘trading venue’ means a trading venue as defined in point (24) of Article 4(1) of Directive 2014/65/EU; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(31)</span></span><span>‘manager of alternative investment funds’ means a manager of alternative investment funds as defined in point (b) of Article 4(1) of Directive 2011/61/EU;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(32)</span></span><span>‘management company’ means a management company as defined in point (b) of Article 2(1) of Directive 2009/65/EC; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(33)</span></span><span>‘data reporting service provider’ means a data reporting service provider as defined in point (63) of Article (4)(1) of Directive 2014/65/EU; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(34)</span></span><span>‘insurance undertaking’ means an insurance undertaking as defined in point (1) of Article 13 of Directive 2009/138/EC; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(35)</span></span><span>‘reinsurance undertaking’ means a reinsurance undertaking as defined in point (4) of Article 13 of Directive 2009/138/EC; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(36)</span></span><span>‘insurance intermediary’ means insurance intermediary as defined in point (3) of Article 2 of Directive (EU) 2016/97; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(37)</span></span><span>‘ancillary insurance intermediary’ means ancillary insurance intermediary as defined in point (4) of Article 2 of Directive (EU) 2016/97; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(38)</span></span><span>‘reinsurance intermediary’ means reinsurance intermediary as defined in point (5) of Article 2 of Directive (EU) 2016/97;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(39)</span></span><span>‘institution for occupational retirement pensions’ means institution for occupational retirement pensions as defined in point (6) of Article 1 of Directive 2016/2341; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(40)</span></span><span>‘credit rating agency’ means a credit rating agency as defined in point (a) of Article 3(1) of Regulation (EC) No 1060/2009; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(41)</span></span><span>‘statutory auditor’ means statutory auditor as defined in point (2) of Article 2 of Directive 2006/43/EC;</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(42)</span></span><span>‘audit firm’ means an audit firm as defined in point (3) of Article 2 of Directive 2006/43/EC; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(43)</span></span><span>‘crypto-asset service provider’ means crypto-asset service provider as defined in point (n) of Article 3(1) of Regulation (EU) 202x/xx [</span><span>PO: insert reference to MICA Regulation</span><span>]; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(44)</span></span><span>‘issuer of crypto-assets’ means issuer of crypto-assets as defined in point (h) of Article 3 (1) of [</span><span>OJ: insert reference to MICA Regulation</span><span>]; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(45)</span></span><span>‘issuer of asset-referenced tokens’ means ‘issuer of asset-referenced payment tokens’ as defined in point (i) of Article 3 (1) of [</span><span>OJ: insert reference to MICA Regulation</span><span>]; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(46)</span></span><span>‘issuer of significant asset-referenced tokens’ means issuer of significant asset-referenced payment tokens ad defined in point (j) of Article 3 (1) of [</span><span>OJ: insert reference to MICA Regulation</span><span>]; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(47)</span></span><span>‘administrator of critical benchmarks’ means an administrator of critical benchmarks as defined in point (x) of Article x of Regulation xx/202x [</span><span>OJ: insert reference to Benchmark Regulation</span><span>]; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(48)</span></span><span>‘crowdfunding service provider’ means a crowdfunding service provider as defined in point (x) Article x of Regulation (EU) 202x/xx [</span><span>PO: insert reference to Crowdfunding Regulation</span><span>];</span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(49)</span></span><span>‘securitisation repository’ means securitisation repository as defined in point (23) of Article 2 of Regulation (EU) 2017/2402; </span>
+            </p>
+            <p class="li Point0">
+               <span class="num"><span>(50)</span></span><span>‘microenterprise’ means a financial entity as defined in Article 2(3) of the Annex to Recommendation 2003/361/EC.</span>
+            </p>
+            <p class="ChapterTitle">
+               <span>CHAPTER II </span>
+            </p>
+            <p class="ChapterTitle">
+               <span>ICT RISK MANAGEMENT </span>
+            </p>
+            <p class="SectionTitle">
+               <span>SECTION I </span>
+            </p>
 
   </body>
 </html>
