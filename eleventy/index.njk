@@ -3,14 +3,18 @@ layout: layouts/base.njk
 permalink: /
 data: chapters
 ---
-<h3>-- Chapters --</h3>
+
+<p class='ChapterTitle'> ~~ Chapters ~~</p>
 
 <ul>
     {%- for chapter in chapters -%}
         <li>
-            <h4> <a href="{{ chapter.name }}"> {{ chapter.name }} - {{chapter.title}}</a> </h4>
-            {%- for article in chapter.articles -%}
-            <li> <a href="{{ article.artName }}">{{ article.artName }} - {{ article.artTitle }}</a> </li>
+            <p class='ChapterTitle'> <a href="{{ chapter.id }}">{{ chapter.id }} - {{chapter.title}}</a></p>
+            {%- for section in chapter.sections -%}
+                <p class='sectionTitle'>{{ section.title }}</p>
+                {%- for article in section.articles -%}
+                    <p class='li Point1'><a href="article-{{ article.id }}">{{ article.id }} - {{ article.name }}</a> </p>
+                {%- endfor -%}
             {%- endfor -%}
         </li>
     {%- endfor -%}

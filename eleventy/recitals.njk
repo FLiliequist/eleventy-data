@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+pagination:
+    data: recitals
+    size: 1
+    alias: recital
+permalink: "recital-{{ recital.id }}/"
+tags: recitals
+---
+
+{{ recital.text | safe }}
+
