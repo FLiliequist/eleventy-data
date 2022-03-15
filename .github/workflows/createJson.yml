@@ -1,0 +1,11 @@
+name: Create Json Data
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Fetch-Url-Code:
+    runs-on: ubuntu-latest
+    steps:
+      - run: python3 ./
