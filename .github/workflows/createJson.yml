@@ -19,7 +19,6 @@ jobs:
       - run: python3 ./python/mapHtmlCode/main.py
       - run: rm -r temp
       - run: |
-          git rm python/mapHtmlCode/classes/__*
           git add *
           git config --global user.email "fl0@springflod.se"
           git config --global user.name "Fredrik Liliequist"
