@@ -5,7 +5,14 @@ on:
       - main
 
 jobs:
-  Fetch-Url-Code:
+  run-python-scripts:
     runs-on: ubuntu-latest
     steps:
-      - run: python3 ./
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - run: python3 ./python/getHtmlCode/main.py
+      - run: python3 ./python/mapHtmlCode/main.py
