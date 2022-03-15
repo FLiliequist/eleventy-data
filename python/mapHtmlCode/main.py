@@ -219,14 +219,14 @@ def createJson(articles, chapters, recitals):
     writeToFile('chapters.json', jsonChapterList)
 
 def writeToFile(filename, content):
-    path = './eleventy/_data/' + filename
+    path = '.eleventy/_data/' + filename
     f = open(path, 'w')
     jsonStr = json.dumps(content)
     f.write(jsonStr)
     f.close()
 
 def main():
-    htmlCode = './python/getHtmlCode/htmlCode.html'
+    htmlCode = '.python/getHtmlCode/htmlCode.html'
     content = readFile(htmlCode)
     mapText(content)
 
