@@ -9,7 +9,7 @@ data: chapters
 <ul>
     {%- for chapter in chapters -%}
         <li>
-            <p class='ChapterTitle'> <a href="{{ chapter.id }}">{{ chapter.id }} - {{chapter.title}}</a></p>
+            <p class='ChapterTitle'> <a href="{{ chapter.id | slug }}">{{ chapter.id }} - {{chapter.title}}</a></p>
             {%- for section in chapter.sections -%}
                 <p class='sectionTitle'>{{ section.title }}</p>
                 {%- for article in section.articles -%}

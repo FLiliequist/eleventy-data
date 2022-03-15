@@ -1,0 +1,18 @@
+---
+tags: chapters
+layout: layouts/base.njk
+pagination:
+    data: chapters
+    size: 1
+    alias: chapter
+permalink: "{{ chapter.id | slug }}/"
+---
+<p class='ChapterTitle'>{{ chapter.id }} {{ chapter.title }}</p>
+<ul>
+    {%- for section in chapter.sections -%}
+        <p class='sectionTitle'>{{ section.title }}</p>
+        {%- for article in section.articles -%}
+            <p class='li Point1'><a href="../article-{{ article.id }}">{{ article.id }} - {{ article.name }}</a> </p>
+        {%- endfor -%}
+    {%- endfor -%}
+</ul>
