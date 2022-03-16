@@ -12,9 +12,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: ${{ github.head_ref }}
-      - run: | 
-          git checkout 
-          ls eleventy/_data
       - run: echo ${{ github.ref }}
       - run: echo $GITHUB_HEAD_REF
       - run: echo $GITHUB_BASE_REF
