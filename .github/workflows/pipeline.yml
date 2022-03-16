@@ -1,13 +1,13 @@
-name: Create _site data
+name: Create static site data
 on: workflow_dispatch
 jobs:
-  clean-up:
+  Fetch-and-map-data:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo content
+      - name: Checkout repo content
         uses: actions/checkout@v2
 
-      - name: setup python
+      - name: Setup python
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
@@ -27,6 +27,6 @@ jobs:
         run: |
           git config user.name "fliliequist"
           git config user.email "fl0@springflod.se"
-          git add *
-          git commit -m "[skip CI]"
+          git add eleventy/_data/*
+          git commit -m "[skip CI] This commit was made by GitHub Action"
           git push
