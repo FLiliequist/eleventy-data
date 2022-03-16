@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref }}
       - run: | 
           git checkout 
           ls eleventy/_data
