@@ -10,6 +10,10 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+
+      - run: echo ${{ github.repository }}
       - name: setup python
         uses: actions/setup-python@v2
         with:
