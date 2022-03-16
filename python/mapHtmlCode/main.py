@@ -11,6 +11,7 @@ def readFile(file):
     with each line in in a seprate element.
     """
     f = open(file, 'r')
+    print(f'Reading data from file {file}')
     lines = []
     for line in f:
         #Remove uncesseary div tags
@@ -220,9 +221,11 @@ def createJson(articles, chapters, recitals):
 
 def writeToFile(filename, content):
     path = 'eleventy/_data/' + filename
+
     f = open(path, 'w')
     jsonStr = json.dumps(content)
     f.write(jsonStr)
+    print(f'Writing data to file {path}')
     f.close()
 
 def main():

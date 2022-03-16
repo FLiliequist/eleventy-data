@@ -22,7 +22,7 @@ jobs:
           echo ---
           ls eleventy/_data
           git status
-          git add *
+          git add eleventy/_data/articles.json eleventy/_data/chapters.json eleventy/_data/recitals.json
           git config --global user.email "fl0@springflod.se"
           git config --global user.name "Fredrik Liliequist"
           git commit -m "Commit by Github Actions, only _data"
