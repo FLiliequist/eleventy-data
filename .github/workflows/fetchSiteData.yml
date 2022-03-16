@@ -14,6 +14,7 @@ jobs:
 
       - name: Setup folders
         if: always()
+        continue-on-error: true
         run: |
           mkdir -p eleventy/_data
           rm eleventy/_data/*
