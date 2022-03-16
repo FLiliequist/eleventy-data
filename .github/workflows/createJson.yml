@@ -3,7 +3,7 @@ on:
   push:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   run-python-scripts:
@@ -15,7 +15,8 @@ jobs:
           git checkout 
           ls eleventy/_data
       - run: echo ${{ github.ref }}
-      - run: echo $GITHUB_WORKSPACE
+      - run: echo $GITHUB_HEAD_REF
+      - run: echo $GITHUB_BASE_REF
       - run: echo ${{ github.payload.pull_request.head.ref }}
 
 
