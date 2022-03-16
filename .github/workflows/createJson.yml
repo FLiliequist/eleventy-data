@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: 3.7
       - name: Clean up
-      - run: | 
+        run: | 
           mkdir -p eleventy/_data
           rm eleventy/_data/*
       - run: | 
