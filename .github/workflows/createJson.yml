@@ -18,6 +18,9 @@ jobs:
       - run: python3 ./python/getHtmlCode/main.py
       - run: python3 ./python/mapHtmlCode/main.py
       - run: |
+          ls
+          echo ---
+          ls eleventy/_data
           git status
           git add *
           git config --global user.email "fl0@springflod.se"
