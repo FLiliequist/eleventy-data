@@ -523,3 +523,30 @@ Should be ok with IE and Chrome on Windows. Doesn't work with Firefox. */
     font-size: 150%;
     display: block;
 }
+.myList {
+	list-style-type: circle;
+	margin: 0;
+	padding: 0;
+	margin-left: 5.91em;
+	font-weight: bold;
+  }
+a:link {
+color: #0000CC;
+}
+
+a:visited {
+color: #6D006D;
+}
+
+a:focus {
+color: #CC0000;
+}
+
+a:hover {
+color: #CC0000;
+}
+
+a:active {
+color: #CC0000;
+font-style: italic;
+}

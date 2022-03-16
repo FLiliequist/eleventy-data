@@ -226,7 +226,7 @@ def writeToFile(filename, content):
     f.close()
 
 def main():
-    htmlCode = 'temp/htmlCode.html'
+    htmlCode = 'python/htmlCode.html'
     content = readFile(htmlCode)
     mapText(content)
 

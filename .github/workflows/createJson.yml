@@ -14,13 +14,12 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - run: mkdir -p temp eleventy/_data
+      - run: mkdir -p eleventy/_data
       - run: python3 ./python/getHtmlCode/main.py
       - run: python3 ./python/mapHtmlCode/main.py
-      - run: rm -r temp
       - run: |
-          git add *
+          git add eleventy/_data/*
           git config --global user.email "fl0@springflod.se"
           git config --global user.name "Fredrik Liliequist"
-          git commit -m "Automated report"
+          git commit -m "Commit by Github Actions, only _data"
           git push
