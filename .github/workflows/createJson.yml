@@ -14,7 +14,6 @@ jobs:
           ref: ${{ github.ref }}
 
       - run: echo ${{ github.ref }}
-      - run: echo ${{ github_workspace }}
       - run: echo $GITHUB_WORKSPACE
 
 
