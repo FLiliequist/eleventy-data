@@ -18,7 +18,15 @@ jobs:
           rm eleventy/_data/*
       
       - name: Run getHtmlCode/main.py
-      - run: python3 ./python/getHtmlCode/main.py
+        run: python3 ./python/getHtmlCode/main.py
 
       - name: Run mapHtmlCode/main.py
-      - run: python3 ./python/mapHtmlCode/main.py
+        run: python3 ./python/mapHtmlCode/main.py
+
+      - name: Run git
+        run: |
+          git config user.name "fliliequist"
+          git config user.email "fl0@springflod.se"
+          git add *
+          git commit -m "[skip CI]"
+          git push
