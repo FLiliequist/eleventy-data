@@ -1,6 +1,5 @@
 name: Create Json Data
-on:  
-  push:
+on:
   pull_request:
     branches:
       - main
@@ -24,8 +23,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - name: Clean up
-        run: | 
+      - name: Set up
+        run: |
+          git checkout $GITHUB_HEAD_REF
           mkdir -p eleventy/_data
           rm eleventy/_data/*
       - run: | 
