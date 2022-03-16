@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
       - run: | 
           git checkout 
           ls eleventy/_data
@@ -25,7 +27,6 @@ jobs:
           python-version: 3.7
       - name: Set up
         run: |
-          git checkout $GITHUB_HEAD_REF
           mkdir -p eleventy/_data
           rm eleventy/_data/*
       - run: | 
