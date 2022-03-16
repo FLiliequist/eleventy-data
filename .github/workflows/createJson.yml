@@ -18,7 +18,8 @@ jobs:
       - run: python3 ./python/getHtmlCode/main.py
       - run: python3 ./python/mapHtmlCode/main.py
       - run: |
-          git add eleventy/_data/*
+          git status
+          git add *
           git config --global user.email "fl0@springflod.se"
           git config --global user.name "Fredrik Liliequist"
           git commit -m "Commit by Github Actions, only _data"
