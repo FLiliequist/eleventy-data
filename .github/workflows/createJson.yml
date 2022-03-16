@@ -25,7 +25,6 @@ jobs:
       - name: Set up
         run: |
           mkdir -p eleventy/_data
-          rm eleventy/_data/*
       - run: | 
           ls eleventy/_data
           python3 ./python/getHtmlCode/main.py
@@ -33,7 +32,6 @@ jobs:
       - run: |
           ls
           echo ---
-          ls eleventy/_data
           git status
           git add ./eleventy/_data/articles.json ./eleventy/_data/chapters.json ./eleventy/_data/recitals.json
           git config --global user.email "fl0@springflod.se"
