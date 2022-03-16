@@ -14,7 +14,6 @@ jobs:
 
       - name: Remove old files
         run: |
-          rm -r eleventy/_site
           rm eleventy/_data/*
       
       - name: Run getHtmlCode/main.py
