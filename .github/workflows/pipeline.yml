@@ -12,8 +12,9 @@ jobs:
         with:
           python-version: 3.7
 
-      - name: Remove old files
+      - name: Setup folders
         run: |
+          mkdir -p eleventy/_data
           rm eleventy/_data/*
       
       - name: Run getHtmlCode/main.py
