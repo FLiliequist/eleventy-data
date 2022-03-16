@@ -15,7 +15,9 @@ jobs:
         with:
           python-version: 3.7
       - run: mkdir -p eleventy/_data
-      - run: python3 ./python/getHtmlCode/main.py
+      - run: | 
+          ls eleventy/_data
+          python3 ./python/getHtmlCode/main.py
       - run: python3 ./python/mapHtmlCode/main.py
       - run: |
           ls
