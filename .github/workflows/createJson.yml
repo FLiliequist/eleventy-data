@@ -13,7 +13,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
 
-      - run: echo ${{ github.repository }}
+      - run: echo ${{ github.ref }}
       - name: setup python
         uses: actions/setup-python@v2
         with:
