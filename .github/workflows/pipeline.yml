@@ -1,5 +1,5 @@
 name: Create _site data
-
+on: workflow_dispatch
 jobs:
   clean-up:
     runs-on: ubuntu-latest
@@ -19,6 +19,6 @@ jobs:
       
       - name: Run getHtmlCode/main.py
       - run: python3 ./python/getHtmlCode/main.py
-      
+
       - name: Run mapHtmlCode/main.py
       - run: python3 ./python/mapHtmlCode/main.py
