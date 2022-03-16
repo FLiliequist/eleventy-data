@@ -13,6 +13,7 @@ jobs:
           python-version: 3.7
 
       - name: Setup folders
+        if: always()
         run: |
           mkdir -p eleventy/_data
           rm eleventy/_data/*
