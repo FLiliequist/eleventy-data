@@ -1,0 +1,24 @@
+name: Create _site data
+
+jobs:
+  clean-up:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Remove old files
+        run: |
+          rm -r eleventy/_site
+          rm eleventy/_data/*
+      
+      - name: Run getHtmlCode/main.py
+      - run: python3 ./python/getHtmlCode/main.py
+      
+      - name: Run mapHtmlCode/main.py
+      - run: python3 ./python/mapHtmlCode/main.py
