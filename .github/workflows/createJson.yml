@@ -14,7 +14,10 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - run: mkdir -p eleventy/_data
+      - name: Clean up
+      - run: | 
+          mkdir -p eleventy/_data
+          rm eleventy/_data/*
       - run: | 
           ls eleventy/_data
           python3 ./python/getHtmlCode/main.py
@@ -24,8 +27,8 @@ jobs:
           echo ---
           ls eleventy/_data
           git status
+          git add ./eleventy/_data/articles.json ./eleventy/_data/chapters.json ./eleventy/_data/recitals.json
           git config --global user.email "fl0@springflod.se"
           git config --global user.name "Fredrik Liliequist"
-          git add ./eleventy/_data/articles.json ./eleventy/_data/chapters.json ./eleventy/_data/recitals.json
           git commit -m "Commit by Github Actions, only _data"
           git push -u origin main
