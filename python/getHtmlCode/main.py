@@ -14,7 +14,7 @@ else:
     content = resource.read().decode(resource.headers.get_content_charset())
 
     print('Write to file...')
-    f = open('temp/htmlCode.html', 'w')
+    f = open('python/htmlCode.html', 'w')
 
     f.write(content)
     f.close()

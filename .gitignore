@@ -1,3 +1,5 @@
 TODO.md
 eleventy/_site
+eleventy/node_modules
+
 python/mapHtmlCode/classes/__pycache__/*
