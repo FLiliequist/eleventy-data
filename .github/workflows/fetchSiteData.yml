@@ -26,6 +26,7 @@ jobs:
         run: python3 ./python/mapHtmlCode/main.py
 
       - name: Run git
+        continue-on-error: true
         run: |
           git config user.name "fliliequist"
           git config user.email "fl0@springflod.se"
