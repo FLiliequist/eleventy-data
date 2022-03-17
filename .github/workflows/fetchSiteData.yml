@@ -13,8 +13,8 @@ jobs:
           python-version: 3.7
 
       - name: Setup folders
-        if: always()
         continue-on-error: true
+        # This will fail if there is nothing to remove
         run: |
           mkdir -p eleventy/_data
           rm eleventy/_data/*
@@ -27,6 +27,7 @@ jobs:
 
       - name: Run git
         continue-on-error: true
+        # This will fail if there is nothing to commit
         run: |
           git config user.name "fliliequist"
           git config user.email "fl0@springflod.se"
